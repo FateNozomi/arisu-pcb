@@ -20,7 +20,7 @@ U 1 1 5C4B1F82
 P 4500 4250
 F 0 "U2" H 4900 2400 50  0000 C CNN
 F 1 "ATmega32U4-AU" H 4900 2500 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 4500 4250 50  0001 C CIN
+F 2 "Housings_QFP:TQFP-44_10x10mm_Pitch0.8mm" H 4500 4250 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 4500 4250 50  0001 C CNN
 	1    4500 4250
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 5C4B2347
 P 1900 5650
 F 0 "U1" H 1900 6328 50  0000 C CNN
 F 1 "USBLC6-2SC6" H 1900 6237 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1150 6050 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 1150 6050 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 2100 6000 50  0001 C CNN
 	1    1900 5650
 	1    0    0    -1  
