@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:arisu-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -69,8 +68,6 @@ F 3 "~" H 2950 4900 50  0001 C CNN
 	1    2950 4900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1300 4600 1900 4600
 $Comp
 L power:VCC #PWR0101
 U 1 1 5C4B2712
@@ -82,9 +79,6 @@ F 3 "" H 2900 4600 50  0001 C CNN
 	1    2900 4600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 4600 1900 5150
-Connection ~ 1900 4600
 Wire Wire Line
 	2900 4600 2750 4600
 Text GLabel 3200 4800 2    50   Input ~ 0
@@ -98,14 +92,10 @@ Wire Wire Line
 Wire Wire Line
 	1300 4800 1350 4800
 Wire Wire Line
-	1400 5550 1350 5550
-Wire Wire Line
 	1350 5550 1350 4800
 Connection ~ 1350 4800
 Wire Wire Line
 	1300 4900 2450 4900
-Wire Wire Line
-	2400 5550 2450 5550
 Wire Wire Line
 	2450 5550 2450 4900
 Connection ~ 2450 4900
@@ -132,12 +122,12 @@ Connection ~ 1000 5250
 $Comp
 L power:GND #PWR0103
 U 1 1 5C4B33A3
-P 1900 6150
-F 0 "#PWR0103" H 1900 5900 50  0001 C CNN
-F 1 "GND" H 1905 5977 50  0000 C CNN
-F 2 "" H 1900 6150 50  0001 C CNN
-F 3 "" H 1900 6150 50  0001 C CNN
-	1    1900 6150
+P 1900 6050
+F 0 "#PWR0103" H 1900 5800 50  0001 C CNN
+F 1 "GND" H 1905 5877 50  0000 C CNN
+F 2 "" H 1900 6050 50  0001 C CNN
+F 3 "" H 1900 6050 50  0001 C CNN
+	1    1900 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1084,8 +1074,6 @@ row2
 Text Label 7200 3100 0    50   ~ 0
 row3
 NoConn ~ 1300 5000
-NoConn ~ 1400 5750
-NoConn ~ 2400 5750
 $Comp
 L Connector_Generic:Conn_01x01 J13
 U 1 1 5C4E1CA1
@@ -1140,8 +1128,6 @@ Wire Wire Line
 	2750 5200 2750 4600
 Connection ~ 2750 4600
 Wire Wire Line
-	2750 4600 1900 4600
-Wire Wire Line
 	2800 5350 2700 5350
 Wire Wire Line
 	2700 5350 2700 4800
@@ -1192,16 +1178,6 @@ F 3 "~" H 8700 2900 50  0001 C CNN
 	1    8700 2900
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	5750 2700 5750 3150
-Wire Bus Line
-	3550 700  3550 2100
-Wire Bus Line
-	5500 5350 5500 7400
-Wire Bus Line
-	6750 2750 6750 5800
-Wire Bus Line
-	7050 2650 7050 5800
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5C59C18D
@@ -1268,4 +1244,27 @@ F 3 "~" H 8700 4100 50  0001 C CNN
 	1    8700 4100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1350 5550 1500 5550
+Wire Wire Line
+	2300 5550 2450 5550
+NoConn ~ 1500 5750
+NoConn ~ 2300 5750
+Wire Wire Line
+	1300 4600 1900 4600
+Wire Wire Line
+	1900 5250 1900 4600
+Wire Bus Line
+	5750 2700 5750 3150
+Wire Bus Line
+	3550 700  3550 2100
+Wire Bus Line
+	5500 5350 5500 7400
+Wire Bus Line
+	7050 2650 7050 5800
+Wire Bus Line
+	6750 2750 6750 5800
+Connection ~ 1900 4600
+Wire Wire Line
+	1900 4600 2750 4600
 $EndSCHEMATC
